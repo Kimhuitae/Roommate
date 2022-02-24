@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://thymeleaf.org/extras/spring-security">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>룸메이트 - 방을 구하는 가장 쉬운 방법</title>
+	<!-- Favicon-->
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	<!-- Bootstrap icons-->
+	<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+			rel="stylesheet" />
+
+	<!-- Core theme CSS (includes Bootstrap)-->
+	<link href="/css/styles.css" rel="stylesheet" />
+	<link href="/css/styles2.css" rel="stylesheet" />
+	<link href="/css/styles3.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<!--상단 네비게이션 메뉴-->
+<nav th:replace="fragments/nav ::header"></nav>
+<div th:replace="fragments/nav ::navi"></div>
+
+<!--원룸 매물 노출 섹션-->
+<section class="container px-lg-5 my-0" style="margin-top:20px;">
+	<div class="top-btn">
+		<form method="post" action="/Roommate/Freeboard">
+			<input type="submit" value="자유게시판" class="btn-cst btn-outline-dark">
+		</form>
+		<form method="post" action="#.jsp">
+			<input type="submit" value="인테리어게시판" class="btn-cst btn-outline-dark">
+		</form>
+		<form method="post" action="#.jsp">
+			<input type="submit" value="법률상담게시판" class="btn-cst btn-outline-dark">
+		</form>
+		<form method="post" action="#.jsp">
+			<input type="submit" value="부동산정보게시판" class="btn-cst btn-outline-dark">
+		</form>
+	</div>
+	<div>
+		<table style="width: 100%;">
+			<colgroup>
+				<col width="10%">
+				<col width="60%">
+				<col width="10%">
+				<col width="10%">
+				<col width="5%">
+				<col width="5%">
+			</colgroup>
+			<thead>
+			<tr>
+				<th id="bN"><h6 class="display-10 fw-bolder">번호</h6></th>
+				<th id="bO"><h6 class="display-10 fw-bolder">제목</h6></th>
+				<th id="bW"><h6 class="display-10 fw-bolder">작성자</h6></th>
+				<th id="bD"><h6 class="display-10 fw-bolder">작성일</h6></th>
+				<th id="bR"><h6 class="display-10 fw-bolder">추천</h6></th>
+				<th id="b0"><h6 class="display-10 fw-bolder">조회</h6></th>
+			</tr>
+			</thead>
+
+			<tbody>
+			<tr style="border-bottom-width: 10px; border-color: white;">
+
+			<tr style="border-bottom-width: 10px; border-color: white;" th:each="freeboard : ${freeboard}">
+				<td style="text-align: center;" th:text="${freeboard.fbn}">
+				</td>
+				<td style="text-align: center;" th:text="${freeboard.fbo}"
+					th:onclick="|location.href='@{/Roommate/Freeboard/fbn=}${freeboard.fbn}'|">
+				</td>
+
+				<!-- 링크걸어서 글내용 보이게 -->
+				<td style="text-align: center;" th:text="${freeboard.user.userid}"></td>
+				<td style="text-align: center;" th:text="${freeboard.fbd}">
+				</td>
+				<td style="text-align: center;">0</td>
+				<td style="text-align: center;">0</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="fb-bottom-btn">
+
+		<button class="btn btn-outline-dark Previous" th:unless="${freeboard.first}">
+			<a th:onclick="|location.href='@{/Roommate/Freeboard/?page=}${freeboard.number-1}'|">이전페이지</a>
+		</button>
+		</button>
+
+		<button class="btn btn-outline-dark nextpage" th:unless="${freeboard.last}">
+			<a th:onclick="|location.href='@{/Roommate/Freeboard/?page=}${freeboard.number+1}'|">다음페이지</a>
+		</button>
+
+		<button class="btn btn-outline-dark new-writh">
+			<a href='/Roommate/Freeboard/Writeform'>글쓰기</a>
+		</button>
+	</div>
+	<hr class="bar">
+	</th:block>
+</section>
+
+<!-- Footer-->
+<footer th:replace="fragments/nav ::footer"></footer>
+
+<!-- Bootstrap core JS-->
+<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/js/scripts.js"></script>
+</body>
+</html>

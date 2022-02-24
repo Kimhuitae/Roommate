@@ -1,0 +1,131 @@
+img {
+	display: block;
+	margin: auto;
+	margin-top: 4rem;
+	margin-bottom: 30px;
+}
+
+.button1 {
+	margin-top: 0.5rem;
+	text-align: center;
+	width: 178px;
+	height: 40px;
+	display: inline-block;
+	border: 1px solid black;
+	background: white;
+	border-radius: 0.5rem;
+	font-family: "S-Core Dream 3";
+}
+
+.button2 {
+	margin-top: 0.5rem;
+	background: black;
+	text-align: center;
+	width: 178px;
+	height: 40px;
+	display: inline-block;
+	color: #ffffff;
+	border: 1px solid black;
+	border-radius: 0.5rem;
+	font-family: "S-Core Dream 3";
+}
+
+.button1:hover {
+	background: black;
+	color: white;
+}
+
+.button2:hover {
+	background: white;
+	color: black;
+}
+
+h1 {
+	font-family: "S-Core Dream 7";
+}
+
+.ex1 {
+	font-family: "S-Core Dream 3";
+	text-align: left;
+	margin-left: 80px;
+}
+
+.ex {
+	font-family: "S-Core Dream 3";
+}
+
+.submit {
+	width: 352px;
+	height: 40px;
+	border-radius: 0.5rem;
+}
+
+.box {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	border: 1px solid lightgray;
+	width: 512px;
+	height: 600px;
+	text-align: center;
+	border-radius: 8px;
+	display: block;
+	margin: auto;
+}
+
+.container {
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -256px;
+	margin-top: -327px;
+}
+
+.naver {
+	width: 64px;
+	height: 64px;
+	background-color: green;
+	display: inline-block;
+	margin: auto;
+	border-radius: 9px;
+}
+
+.kakao {
+	width: 64px;
+	height: 64px;
+	background-color: yellow;
+	display: inline-block;
+	margin: auto;
+	border-radius: 9px;
+}
+
+.facebook {
+	width: 64px;
+	height: 64px;
+	background-color: blue;
+	display: inline-block;
+	margin: auto;
+	border-radius: 9px;
+}
+
+.google {
+	width: 64px;
+	height: 64px;
+	background-color: red;
+	display: inline-block;
+	margin: auto;
+	border-radius: 9px;
+}
+
+.apple {
+	width: 64px;
+	height: 64px;
+	background-color: black;
+	display: inline-block;
+	margin: auto;
+	border-radius: 9px;
+}
+
+.bar {
+	width: 360px;
+}

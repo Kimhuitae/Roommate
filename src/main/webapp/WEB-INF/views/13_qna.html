@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>룸메이트 - 방을 구하는 가장 쉬운 방법</title>
+<!-- Favicon-->
+<script 
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+</script>
+<link rel="icon" type="/image/x-icon" href="assets/favicon.ico" />
+<!-- Bootstrap icons-->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+	rel="stylesheet" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="/css/styles.css" rel="stylesheet" />
+<link href="/css/styles2.css" rel="stylesheet" />
+<link href="/css/styles3.css" rel="stylesheet" />
+
+</head>
+<body>
+	<!--상단 네비게이션 메뉴-->
+	<nav th:replace="fragments/nav ::header"></nav>
+	<div th:replace="fragments/nav ::navi"></div>
+	<!--원룸 매물 노출 섹션-->
+	<section class="py-3">
+		<div class="container px-4 px-lg-5 mt-5">
+			<div>
+				<div>
+					<h4 class="today-fav2">자주 묻는 질문</h4>
+					<p class="qna-sm-title">
+						룸메이트 사용자의 편의를 위해 자주 묻는 질문과 답변을 모아놓았습니다.
+						<br>
+						만약 원하시는 질문과 답변이 없다면 1:1 문의를 이용해주세요!
+					</p>
+				</div>
+			</div>
+			<div class="qna-container">
+
+				<div id="q1">Q. 룸메이트는 어떤 서비스인가요?</div>
+				<div id="a1">
+					<p>
+					A. 국내 최초 커뮤니티와 결합한 오픈형 부동산 플랫폼 '룸메이트'에서 살고 싶은 집을 만나보세요!
+					</p>
+					
+					<p>
+					▶ 대한민국 모든 방! 다 있다.<br>
+					원룸, 투∙쓰리룸, 오피스텔∙도시형생활주택은 물론! 아파트까지!<br>
+					다~있는 룸메이트에서 원하는 방을 찾고 찜 하세요!
+					</p>
+
+					<p>
+					▶ 방 주변의 안전 정보, 한 눈에!<br>
+					방 주변의 cctv, 치안센터 등 안전 시설들이 어떻게 분포되어 있는지 확인할 수 있습니다.<br>
+					룸메이트를 통해 보다 안전한 방을 찾아보세요.<br>
+					</p>
+
+					<p>
+					▶ 계약여부를 확인하는 ‘매물확인 메신저’<br>
+					전화상담 전에 매물의 계약가능 여부를 미리 확인해보세요.<br>
+					룸메이트에서 중개사무소에 문의하여 알려드립니다.<br>
+					</p>
+
+					<p>
+					▶ 분양 정보를 한눈에 ‘분양 정보관’<br>
+					전국 모든 지역의 분양 정보가 다 있다!<br>
+					분양 뉴스, 분양 일정, 청약 가이드까지 룸메이트가 꼼꼼하게 전달해드려요.<br>
+					</p>
+
+					<p>
+					▶지역별 전월세 평균가<br>
+					지도에서 원하는 지역을 선택하면 원룸부터 오피스텔까지 전월세 평균가를 확인 할 수 있어요.
+					</p>
+				</div>
+
+				<div id="q2">Q. 회원가입을 하면 어떤 점이 좋나요?</div>
+				<div id="a2">
+						<p>
+						A. 다방앱에 회원가입 후 로그인을 하시면<br>
+						</p>
+
+						<p>
+						▶ ‘관심목록'의 내용을 안전하게 저장!<br>
+						원룸, 투∙쓰리룸, 오피스텔∙도시형생활주택 등 다양한 매물을 살펴보는 과정에서 매물을 조회하고 찜한 내역이 무제한으로 쌓이는 ‘관심목록'의 내용을 PC와 모바일에서 동일하게 확인할 수 있습니다. 또한 앱 업데이트 시에도 그 내용이 그대로 유지됩니다. 
+						</p>
+
+						<p>
+						▶ 단지 찜하기!<br>
+						아파트 단지 찜하기는 회원님이 찜하신 매물 조건에 따라 신규 매물 등록 알림을 보내드리기 때문에 로그인 한 회원에게만 제공 가능합니다.<br>
+						마음에 드는 아파트에 거래가능한 방이 없을지라도 해당 단지를 찜해두시면 신규매물이 등록되었을 때 당일 알림을 보내드립니다. 누구보다 빠르게 원하는 방을 찾아보세요! 
+						</p>
+
+						<p>
+						▶ 직거래로 방 내놓기! <br>
+						공인중개사가 아닌 개인 회원도 직접 방 사진을 찍어 관련 정보를 기입, 매물을 광고할 수 있습니다. 
+						</p>
+
+						<p>
+						▶ 분양 알림받기!<br>
+						내가 원하는 분양정보의 '알림받기'를 설정해 놓으면 모집 공고일부터 청약 접수일까지 분양 일정에 대한 알림을 받을 수 있습니다.
+						</p>
+
+						<p>
+						▶ 계약여부를 확인하는 ‘매물확인 메신저’<br>
+						방이 있는 지 없는지, 내 정보를 중개사에게 전달하기 전에 매물의 계약가능 여부를 간단히 확인하고 싶을 때 매물확인 메신저를 통해 확인해보세요.
+						</p>
+
+						<p>
+						▶ 문자상담 
+						지금 바로 통화가 부담스러울 때, 문자상담으로 문의하세요!
+						</p>
+				</div>
+
+				<div id="q3">Q. 직거래는 어떻게 방을 내놓나요?</div>
+				<div id="a3">
+					<p>
+						A. 개인회원의 경우 직거래 매물 1건에 대해 무료 광고가 가능합니다.<br>
+						광고는 30일 간 공개 되며 기간이 지날 경우 비공개처리됩니다. 
+						비공개된 매물은 수정하여 다시 노출할 수 있습니다.<br>
+						<br>
+						▶ 다방앱의 '더보기'메뉴에서 ‘방 내놓기’ 버튼을 탭한 후 매물의 위치 정보, 방 종류, 거래 종류(전세∙월세) 등의 매물 기본 정보와 관리비, 옵션 사항 등 추가 정보를 상세히 입력하시면 됩니다. <br>
+						<br>
+						▶ 매물 광고 시 방 사진 3장은 필수 사항이며, 제목과 상세설명을 정성껏 작성해 주시면 광고 효과가 증대됩니다.
+					</p>
+				</div>
+
+				<div id="q4">Q. 룸메이트에 등록된 방은 믿을 수 있나요?</div>
+				<div id="a4">
+					<p>
+						A. 다방은 사용자 분들에게 믿을 수 있는 정보를 제공하는 것을 최우선으로 합니다.
+						<br><br>
+						▶ 매물의 정확한 위치를 지도 위에 표시하고, 매물 근처의 편의시설 등을 한 눈에 볼 수 있도록 하여 발품을 팔지 않고도 주변 환경까지 확인하실 수 있도록 했습니다.
+						<br><br>
+						▶ 또한 지속적인 허위매물 관리를 통해 사용자 분들이 허위정보로 인한 불편함을 느끼지 않도록 노력하고 있습니다.
+					</p>
+				</div>
+
+				<div id="q5">Q. 허위매물은 어떻게 관리하나요?</div>
+				<div id="a5">
+					A. 허위매물 전담팀이 수시로 매물을 살펴보고 허위매물을 필터링하고 있습니다.
+					<br><br>
+					▶ 지역구별 평균 시세를 파악해 시세에 비해 확연히 저렴한 매물이나 실사진이 아닌 사진이 포함된 경우 직접 연락을 취해 정보 수정을 요청합니다. 
+					<br><br>
+					▶ 광고 기간이 30일이 지난 매물의 경우 자동으로 비공개 처리하여 계약이 완료된 매물의 노출 가능성을 줄였고, 내부 규정에 따라 경고 및 서비스 이용 제재를 부과하고 있습니다.
+					<br><br>
+					▶ 사용자가 직접 허위매물을 신고할 수 있도록 관련 제도를 마련하여 다방면에서 허위매물 ZERO를 위한 노력을 기울이고 있습니다.
+				</div>
+
+				<div id="q6">Q. 계약과 관련된 서류들을 찾고 있는데 어디서 찾을 수 있나요?</div>
+				<div id="a6">
+						A. 룸메이트에서 제공하는 부동산 계약 관련 서류 샘플들은 자유게시판 공지글을 참고하시면 됩니다.
+				</div>
+				
+				<div id="q7">Q. 회원탈퇴는 어떻게 하나요?</div>
+				<div id="a7">
+						A. 다방 서비스 회원탈퇴를 원하실 경우<br>
+						<br>
+						▶ 다방앱의 ‘더보기’ 메뉴에서 ‘정보수정’으로 이동 후 화면 하단에 '회원탈퇴'를 탭하시면 탈퇴가 가능합니다.<br>
+						<br>
+						▶ 다방앱과 PC에서 모두 회원탈퇴가 가능하며, 다방의 개선점에 대한 건의 사항은 hello@dabangapp.com 으로 보내주시면 서비스 개선에 큰 도움이 됩니다.
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Footer-->
+	<footer th:replace="fragments/nav ::footer"></footer>
+
+	<script>
+
+		$('#q1').click(function(){
+			$('#a1').slideToggle();
+		});
+
+		$('#q2').click(function(){
+			$('#a2').slideToggle();
+		});
+
+		$('#q3').click(function(){
+			$('#a3').slideToggle();
+		});
+
+		$('#q4').click(function(){
+			$('#a4').slideToggle();
+		});
+
+		$('#q5').click(function(){
+			$('#a5').slideToggle();
+		});
+
+		$('#q6').click(function(){
+			$('#a6').slideToggle();
+		});
+
+		$('#q7').click(function(){
+			$('#a7').slideToggle();
+			$('#a7').css('borderTop', '0px');
+		});
+
+	</script>
+	<!-- Bootstrap core JS-->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+	</script>
+	<!-- Core theme JS-->
+	<script src="/js/scripts.js"></script>
+</body>
+</html>

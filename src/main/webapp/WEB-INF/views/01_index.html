@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8" />
+<meta name="viewport"
+	  content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>룸메이트 - 방을 구하는 가장 쉬운 방법</title>
+<!-- Favicon-->
+<link rel="icon" type="/image/x-icon" href="assets/favicon.ico" />
+<!-- Bootstrap icons-->
+<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+		rel="stylesheet" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="/css/styles.css" rel="stylesheet" />
+<link href="/css/styles2.css" rel="stylesheet" />
+</head>
+<body>
+<nav th:replace="fragments/nav ::header"></nav>
+<div th:replace="fragments/nav ::navi"></div>
+
+<!--원룸 매물 노출 섹션-->
+<section class="py-3">
+	<div class="container px-4 px-lg-5 mt-5">
+		<div>
+			<div>
+				<h4 class="today-fav">원룸</h4>
+			</div>
+			<div>
+				<a link href="/Rommmate/Oneroom" class="today-fav-more">더보기 ></a>
+			</div>
+		</div>
+		<div
+				class="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-1 row-cols-lg-3 row-cols-xl-3 justify-content-center"
+				style="clear: both;">
+			<div class="col mb-5">
+				<div class="card h-100">
+					<!-- Product image-->
+					<a href="/Rommmate/Oneroom/detail(example)"> <img
+							class="card-img-top" src="/img/bedroom-1285156.jpg" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">사당동 원룸</h5>
+							<!-- Product price-->
+							월세 5000 / 50만원
+							<!-- Product sub explain-->
+							<br> <span class="product-sub-exp"> 초고속 인터넷 설치, 주차장
+									이용 가능 </span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<a class="btn btn-outline-dark mt-auto"
+							   href="/Rommmate/Oneroom/detail(example)">자세히 보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-5">
+				<div class="card h-100">
+					<!-- Sale badge-->
+					<div class="badge bg-dark text-white position-absolute"
+						 style="top: 0.5rem; right: 0.5rem">급매</div>
+					<!-- Product image-->
+					<a href="#"> <img class="card-img-top"
+									  src="/img/bedroom-1872196.jpg" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">봉천동 원룸</h5>
+							<!-- Product price-->
+							<!-- <span class="text-muted text-decoration-line-through">$20.00</span> -->
+							월세 7000 / 55만원
+							<!-- Product sub explain-->
+							<br> <span class="product-sub-exp">관리비 포함, 반려동물 동반
+									가능</span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<a class="btn btn-outline-dark mt-auto" href="#">자세히 보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-5">
+				<div class="card h-100">
+					<!-- Product image-->
+					<a href="#"> <img class="card-img-top"
+									  src="/img/chairs-2181968.jpg" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">방배동 원룸</h5>
+							<!-- Product price-->
+							<!-- <span class="text-muted text-decoration-line-through">$50.00</span> -->
+							월세 5500 / 65만원
+							<!-- Product sub explain-->
+							<br> <span class="product-sub-exp">관리비 별도, 보증금 문의 요망</span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<a class="btn btn-outline-dark mt-auto" href="#">자세히 보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<!--투룸 / 빌라 매물 섹션-->
+<section>
+	<div class="container px-4 px-lg-5">
+		<div>
+			<div>
+				<h4 class="today-fav">투룸 / 빌라</h4>
+			</div>
+			<div>
+				<a link href="/Roommate/Tworoom" class="today-fav-more">더보기
+					></a>
+			</div>
+		</div>
+		<div
+				class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 justify-content-center"
+				style="clear: both;">
+			<div class="col mb-5">
+				<div class="card h-100">
+					<!-- Sale badge-->
+					<div class="badge bg-dark text-white position-absolute"
+						 style="top: 0.5rem; right: 0.5rem">급매</div>
+					<!-- Product image-->
+					<a href="/Roommate/Tworoom/detail(example)"> <img
+							class="card-img-top" src="/img/furniture-998265.jpg" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">서초동 빌라</h5>
+							<!-- Product price-->
+							월세 1억 / 65만원
+							<!-- Product sub explain-->
+							<br> <span class="product-sub-exp">관리비 별도, 기가랜 설치,
+									남향, 위치 좋음</span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<a class="btn btn-outline-dark mt-auto"
+							   href="/Roommate/Tworoom/detail(example)">자세히 보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-5">
+				<div class="card h-100">
+					<!-- Product image-->
+					<a href="#"> <img class="card-img-top"
+									  src="/img/living-room-1835923.jpg" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">역삼동 투룸</h5>
+							<!-- Product price-->
+							<!-- <span class="text-muted text-decoration-line-through">$20.00</span> -->
+							월세 1억 5천 / 55만원
+							<!-- Product sub explain-->
+							<br> <span class="product-sub-exp">관리비 포함, 역에서 도보 3분
+									초역세권</span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<a class="btn btn-outline-dark mt-auto" href="#">자세히 보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-5">
+				<div class="card h-100">
+					<!-- Product image-->
+					<a href="#"> <img class="card-img-top"
+									  src="/img/living-room-1853203.jpg" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">행운동 원룸</h5>
+							<!-- Product price-->
+							<!-- <span class="text-muted text-decoration-line-through">$50.00</span> -->
+							월세 1억 / 55만원
+							<!-- Product sub explain-->
+							<br> <span class="product-sub-exp">관리비 별도, 무인 택배함
+									설치, 반려동물 불가</span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<a class="btn btn-outline-dark mt-auto" href="#">자세히 보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<!--아파트 매물 섹션-->
+<section>
+	<div class="container px-4 px-lg-5">
+		<div>
+			<div>
+				<h4 class="today-fav">아파트</h4>
+			</div>
+			<div>
+				<a link href="/Roommate/Apt" class="today-fav-more">더보기 ></a>
+			</div>
+		</div>
+		<div
+				class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 justify-content-center"
+				style="clear: both;">
+			<div class="col mb-5">
+				<div class="card h-100">
+					<!-- Product image-->
+					<a href="/Roommate/Apt/detail(example)"> <img class="card-img-top"
+																  src="/img/home-1622401.jpg" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">서초 그랑시아</h5>
+							<!-- Product price-->
+							매매 13억 / 전세 10억
+							<!-- Product sub explain-->
+							<br> <span class="product-sub-exp">기가랜 설치, 남향, 위치
+									좋음, 풀리모델링</span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<a class="btn btn-outline-dark mt-auto"
+							   href="/Roommate/Apt/detail(example)">자세히 보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-5">
+				<div class="card h-100">
+					<!-- Product image-->
+					<a href="#"> <img class="card-img-top"
+									  src="/img/interior-2685521.jpg" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">역삼 힐스테이트</h5>
+							<!-- Product price-->
+							<!-- <span class="text-muted text-decoration-line-through">$20.00</span> -->
+							월세 5억 / 105만원
+							<!-- Product sub explain-->
+							<br> <span class="product-sub-exp">역에서 도보 6분 초역세권</span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<a class="btn btn-outline-dark mt-auto" href="#">자세히 보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-5">
+				<div class="card h-100">
+					<!-- Sale badge-->
+					<div class="badge bg-dark text-white position-absolute"
+						 style="top: 0.5rem; right: 0.5rem">급매</div>
+					<!-- Product image-->
+					<a href="#"> <img class="card-img-top"
+									  src="/img/living-room-6823547_1920.png" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">행운 리첸시빌</h5>
+							<!-- Product price-->
+							<!-- <span class="text-muted text-decoration-line-through">$50.00</span> -->
+							매매 11억 / 전세 8억 5천
+							<!-- Product sub explain-->
+							<br> <span class="product-sub-exp">남향, 올수리, 학군 최상</span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<a class="btn btn-outline-dark mt-auto" href="#">자세히 보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<!--게시판 섹션-->
+<div class="board-sec">
+	<section
+			class="container px-0 row-board gx-4 gx-lg-5 row-cols-1 row-cols-md-2 justify-content-center"
+			style="clear: both;">
+		<!--메인 자유게시판 섹션 시작-->
+		<div class="container px-4 px-lg-5 mt-5">
+			<div>
+				<div>
+					<h4 class="today-fav" style="color: #f8f8fa;">자유게시판</h4>
+				</div>
+				<div>
+					<a link href="/Roommate/Freeboard" class="today-fav-more">바로가기 ></a>
+				</div>
+			</div>
+
+			<div class="col mb-5 justify-content-center" style="clear: both;">
+				<div class="card h-100">
+					<!-- Product image-->
+					<a href="#"> <img class="card-img-top"
+									  src="https://dummyimage.com/562x316/#f8f8fa/000000" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">자유게시판 표시 구역</h5>
+							<!-- Product price-->
+							<!-- 부가설명 -->
+							<!-- Product sub explain-->
+							<br> <span class="product-sub-exp"></span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<!-- <a class="btn btn-outline-dark mt-auto" href="#">자세히 보기</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--메인 자유게시판 섹션 끝-->
+
+		<!--인테리어게시판 섹션 시작-->
+		<div class="container px-4 px-lg-5 mt-5">
+			<div>
+				<div>
+					<h4 class="today-fav" style="color: #f8f8fa;">인테리어게시판</h4>
+				</div>
+				<div>
+					<a link href="#" class="today-fav-more">바로가기 ></a>
+				</div>
+			</div>
+
+			<div class="col mb-5 justify-content-center" style="clear: both;">
+				<div class="card h-100">
+					<!-- Product image-->
+					<a href="#"> <img class="card-img-top"
+									  src="https://dummyimage.com/562x316/#f8f8fa/000000" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">인테리어게시판 표시 구역</h5>
+							<!-- Product price-->
+							<!-- 부가설명 -->
+							<!-- Product sub explain-->
+							<br> <span class="product-sub-exp"></span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<!-- <a class="btn btn-outline-dark mt-auto" href="#">자세히 보기</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--인테리어게시판 섹션 끝-->
+
+		<!--법률정보게시판 섹션 시작-->
+		<div class="container px-4 px-lg-5 mt-5">
+			<div>
+				<div>
+					<h4 class="today-fav" style="color: #f8f8fa;">법률정보게시판</h4>
+				</div>
+				<div>
+					<a link href="#" class="today-fav-more">바로가기 ></a>
+				</div>
+			</div>
+
+			<div class="col mb-5 justify-content-center" style="clear: both;">
+				<div class="card h-100">
+					<!-- Product image-->
+					<a href="#"> <img class="card-img-top"
+									  src="https://dummyimage.com/562x316/#f8f8fa/000000" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">법률정보게시판 표시 구역</h5>
+							<!-- Product price-->
+							<!-- 부가설명 -->
+							<!-- Product sub explain-->
+							<br> <span class="product-sub-exp"></span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<!-- <a class="btn btn-outline-dark mt-auto" href="#">자세히 보기</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--법률정보게시판 섹션 끝-->
+
+		<!--부동산정보게시판 섹션 시작-->
+		<div class="container px-4 px-lg-5 mt-5">
+			<div>
+				<div>
+					<h4 class="today-fav" style="color: #f8f8fa;">부동산정보게시판</h4>
+				</div>
+				<div>
+					<a link href="#" class="today-fav-more">바로가기 ></a>
+				</div>
+			</div>
+
+			<div class="col mb-5 justify-content-center" style="clear: both;">
+				<div class="card h-100">
+					<!-- Product image-->
+					<a href="#"> <img class="card-img-top"
+									  src="https://dummyimage.com/562x316/#f8f8fa/000000" alt="..." />
+					</a>
+					<!-- Product details-->
+					<div class="card-body p-4">
+						<div class="text-center">
+							<!-- Product name-->
+							<h5 class="fw-bolder">부동산정보게시판 표시 구역</h5>
+							<!-- Product price-->
+							<!-- 부가설명 -->
+							<!-- Product sub explain-->
+							<br>
+							<span class="product-sub-exp"></span>
+						</div>
+					</div>
+					<!-- Product actions-->
+					<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+						<div class="text-center">
+							<!-- <a class="btn btn-outline-dark mt-auto" href="#">자세히 보기</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--부동산정보게시판 섹션 끝-->
+	</section>
+</div>
+
+<!-- Footer-->
+<footer th:replace="fragments/nav ::footer"></footer>
+
+<!-- Bootstrap core JS-->
+<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/js/scripts.js"></script>
+
+</body>
+</html>

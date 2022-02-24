@@ -1,0 +1,37 @@
+server:
+  port: 5500
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  thymeleaf:
+    enabled: true
+    encoding: UTF-8
+    prefix: /WEB-INF/views/
+    suffix: .html
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/roomdb?serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create # 후엔 update로 바꿔야함 처음할땐 create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl # 변수명을 컬럼명으로 사용하기 위해
+      use-new-id-generator-mappings: false
+    show-sql: true #콘솔창에 보이게
+    properties:
+      hibernate.format_sql: true
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/css/styles2.css" rel="stylesheet" />
+    <link href="/css/styles3.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <title>룸메이트 - 방을 구하는 가장 쉬운 방법</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<!--상단 네비게이션 메뉴-->
+<nav th:replace="fragments/nav ::header"></nav>
+<div th:replace="fragments/nav ::nav"></div>
+
+<!--게시물 작성 세션-->
+<section class="container px-lg-5 my-0">
+    <div class="writeform" style="width: 100%;">
+        <form>
+            <table>
+                <thead>
+                <tr style="margin-bottom: 2rem;">
+                    <th><h3>게시글 작성</h3></th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td><input type="text" placeholder="제목" name="fbo" style="width: 1224px; height: 2rem; font-size:1rem; margin-bottom: 1rem;" id="fbo"></td>
+                </tr>
+                <tr>
+                    <td><textarea placeholder="내용" name="fbrcontent" style="width: 1224px; height: 20rem; font-size: 1rem;" id="fbrcontent"></textarea></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="fb-bottom-btn">
+                <input type="button" value="글쓰기" class="btn btn-outline-dark" style="float: right;" id="btn-write">
+            </div>
+            <hr class="bar">
+        </form>
+    </div>
+</section>
+
+<footer th:replace="fragments/nav ::footer"></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/js/scripts.js"></script>
+<script src="/js/freeboard.js"></script>
+</body>
+</html>

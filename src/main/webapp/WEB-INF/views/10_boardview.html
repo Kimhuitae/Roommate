@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>룸메이트 - 방을 구하는 가장 쉬운 방법</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/css/styles2.css" rel="stylesheet" />
+    <link href="/css/styles3.css" rel="stylesheet" />
+    <link href="/css/styles4.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<!--상단 네비게이션 메뉴-->
+<nav th:replace="fragments/nav ::header"></nav>
+<div th:replace="fragments/nav ::nav"></div>
+
+<!--원룸 매물 노출 섹션-->
+<section class="container px-4 px-lg-5 my-5 board4" style="margin-top:20px;">
+
+    <div class="top-btn">
+        <form method="post" action="/Roommate/Freeboard">
+            <input type="submit" value="자유게시판" class="btn-cst outline-dark">
+        </form>
+        <form method="post" action="#.jsp">
+            <input type="submit" value="인테리어게시판"class="btn-cst outline-dark">
+        </form>
+
+        <form method="post" action="#.jsp">
+            <input type="submit" value="법률상담게시판"class="btn-cst outline-dark">
+        </form>
+        <form method="post" action="#.jsp">
+            <input type="submit" value="부동산정보게시판"class="btn-cst outline-dark">
+        </form>
+    </div>
+
+    <div class="container px-4 px-lg-5 my-5 boardcontent">
+        <table>
+            <thead>
+
+            </thead>
+
+            <tbody>
+            <th:block th:each="freeboard : ${freeboard}">
+                <tr style="border-bottom-width:20px; border-color:white;">
+
+                    <td th:text="${freeboard.fbo}"></td>
+                </tr>
+                <tr style="border-bottom-width: 20px; border-color:white;">
+                    <td th:text="${freeboard.user.userid}"></td>
+
+                </tr>
+                <tr style="border-top: thick double #000000;">
+                    <td colspan="2" style="min-height:200px;" th:text="${freeboard.fbrcontent}"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn btn-outline-dark" onclick="location.href='/Roommate/Freeboard'">목록</button>
+        <th:block th:each="freeboard : ${freeboard}">
+            <input type="hidden" id="fbn" th:value="${freeboard.fbn}">
+
+            <button class="btn btn-outline-dark" th:onclick="|location.href='@{/Roommate/Freeboard/update/fbn=}${freeboard.fbn}'|">수정
+
+            </button>
+
+            <button class="btn btn-outline-dark" id="btn-delete">삭제</button>
+
+            </tbody>
+        </th:block>
+        </th:block>
+
+    </div>
+
+    <br>
+    <div class="card">
+        <div class="card-header">댓글</div>
+        <ul id="comment--box"class="list-group">
+            <form>
+                <input type="hidden" id="userid" name="userid" th:value="${#authentication.Principal}"/>
+
+                <input type="hidden" id="fbn" name="fbn" th:value="${freeboard.fbn}" />
+                <div class="card-body">
+                    댓글쓰기 : <input type="text" id="replycontent" class="form-control" rows="1" th:value="${#authentication.Principal}">
+
+                </div>
+                <div class="card-footer">
+                    <button type="button" id="btn-reply-save" class="btn btn-primary btn-sm">등록</button>
+                </div>
+            </form>
+
+            <th:block th:each="reply : ${freeboard.reply}">
+                <li id="comment--1"class="list-group-item d-flex justify-content-between">
+                    <input type="hidden" th:value="${reply.replyid}">
+                    <div th:text="${reply.replycontent}"></div>
+                    <div class="d-flex">
+                        <div th:text="${reply.user.userid}"></div>
+
+                        <button class="btn btn-outline-dark btn-sm" style="margin-left:10px;" id="btn-reply-delete1313">삭제 구현중</button>
+                    </div>
+                </li>
+            </th:block>
+
+        </ul>
+    </div>
+    </th:block>
+</section>
+
+<!-- Footer-->
+<footer th:replace="fragments/nav ::footer"></footer>
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="/js/scripts.js"></script>
+<script src="/js/freeboard.js"></script>
+</body>
+</html>

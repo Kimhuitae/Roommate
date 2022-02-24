@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:sec="http://thymeleaf.org/extras/spring-security">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--	<meta name="_csrf" th:content="${_csrf.token}">-->
+<!--	<meta name="_csrf_header" th:content="${_csrf.headerName}">-->
+<link rel="stylesheet" href="/css/login.css">
+	<link rel="stylesheet" href="/css/login2.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<title>룸메이트 - 방을 구하는 가장 쉬운 방법</title>
+
+
+</head>
+<body>
+	<div>
+		<a href="/Roommate/main"><img src="/img/0.브랜드로고.png" id="logo"></a>
+		<form action="/Roommate/loginprob" method="post">
+			<div class="box">
+				<h1>룸메이트 로그인</h1>
+				<p class="ex1">아이디</p>
+				<input type="text" class="submit" name="userid" id="userid">
+				<p class="ex1">비밀번호</p>
+				<input type="password" class="submit" name="userpw" id="userpw"> <br>
+				<br>
+				<input type="button" class="button1" value="취소"  onclick="location.href='/Roommate/main'">
+				<input type="submit" class="button2" value="로그인">
+
+		</form>
+		
+		<br> <br>
+		<hr class='bar'>
+		<p class="ex">SNS 계정 간편 로그인</p>
+		<div class="parent">
+			<div class="naver">
+				<p class="ex">
+					<span style="color: #ffffff;">네이버</span>
+				</p>
+			</div>
+			<div class="kakao">
+				<p class="ex">카카오</p>
+			</div>
+			<div class="facebook">
+				<p class="ex">
+					<span style="color: #ffffff;">페이스북</span>
+				</p>
+			</div>
+			<div class="google">
+				<p class="ex">
+					<span style="color: #ffffff;">구글</span>
+				</p>
+			</div>
+			<div class="apple">
+				<p class="ex">
+					<span style="color: #ffffff;">애플</span>
+				</p>
+			</div>
+
+		</div>
+		<p class="ex">아이디, 비밀번호 찾기</p>
+		<p class="ex">도움이 필요하세요?</p>
+
+	</div>
+<!--	<script src="/js/user.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://thymeleaf.org/extras/spring-security">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>룸메이트 - 방을 구하는 가장 쉬운 방법</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+        <link href="/css/styles2.css" rel="stylesheet" />
+    </head>
+    <body>
+       <!--상단 네비게이션 메뉴-->
+       <nav th:replace="fragments/nav ::header"></nav>
+       
+        <!--상단 메인 배너-->
+        <div class="bg-dark py-6"><!--bg-dark가 메인 배너 색상-->
+            <div class="container px-4 px-lg-5 my-6 main-banner-text">
+                <div class="text-start text-white">
+                    <!--가격 / 면적 / 예상 주거비-->
+                    <div style="display: flex; margin-bottom: 3rem;">
+                        <div>
+                            <p class="dt-ex-gray">매매 / 전세</p>
+                            <p class="dt-ex-size-2">13억 / 10억</p>
+                        </div>
+                        <div class="updown"></div>
+                        <div>
+                            <p class="dt-ex-gray">전용면적</p>
+                            <p class="dt-ex-size-2">119.41m2</p>
+                        </div>
+                        <div class="updown"></div>
+                        <div>
+                            <p class="dt-ex-gray">한달 예상 주거비</p>
+                            <p class="dt-ex-size-2">1010만원 + a</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="detail-ex">
+                            <div class="dt-ex-cont dt-ex-cont-line">
+                                <p class="select-gy">해당층 / 건물층</p>
+                                <p>20층 / 35층</p>
+                                <p class="select-gy">전용 / 공급면적</p>
+                                <p>119.41m2 / 148.8m2</p>
+                                <p class="select-gy">방 수 / 욕실 수</p>
+                                <p>4개 / 2개</p>
+                                <p class="select-gy">방향</p>
+                                <p>남향</p>
+                            </div>
+                            <div class="dt-ex-cont dt-ex-cont-line">
+                                <p class="select-gy">난방종류</p>
+                                <p>개별난방</p>
+                                <p class="select-gy">총 세대 수</p>
+                                <p>1446세대</p>
+                                <p class="select-gy">건물 주차 수</p>
+                                <p>총 2892대</p>
+                                <p class="select-gy">세대당 주차 수</p>
+                                <p>2대</p>
+                            </div>
+                            <div class="dt-ex-cont dt-ex-cont-line">
+                                <p class="select-gy">입주 가능</p>
+                                <p>즉시 입ㅈ주</p>
+                                <p class="select-gy">주용도</p>
+                                <p>공동주택 외</p>
+                                <p class="select-gy">사용 승인</p>
+                                <p>2021.11.04</p>
+                                <p class="select-gy">최초 등록일</p>
+                                <p>2021.11.17</p>
+                            </div>
+                            <div class="dt-ex-cont">
+                                <p class="select-gy">최근 수정일</p>
+                                <p>2021.11.24</p>
+                                <p class="select-gy">&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p class="select-gy">&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--원룸 매물 노출 섹션-->
+        <section class="py-3">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div>
+
+                </div>
+                <div class="gx-4 gx-lg-5 row-cols-1 row-cols-sm-1 row-cols-lg-3 row-cols-xl-3 justify-content-start" style="clear: both;">
+                    <!--1번 매물-->
+                    <div class="card-dt">
+                        <div class="card-img-dt-1">
+                            <img src="/img/home-1622401.jpg" alt="#" class="card-img-dt-1">
+                        </div>
+                        <div>
+                            <div style="display: flex; margin-bottom: 30px;">
+                                <div style="margin-right: 30px;">
+                                    <img src="https://dummyimage.com/283x225/f8f8fa/000000" alt="#">
+                                </div>
+                                <div>
+                                    <img src="https://dummyimage.com/283x225/f8f8fa/000000" alt="#">
+                                </div>
+                            </div>
+                            <div style="display: flex; clear: both;">
+                                <div style="margin-right: 30px;">
+                                    <img src="https://dummyimage.com/283x225/f8f8fa/000000" alt="#">
+                                </div>
+                                <div>
+                                    <img src="https://dummyimage.com/283x225/f8f8fa/000000" alt="#">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="width: 100%; display: flex;">
+                        <div style="width: 100%; text-align: center;">
+                            <h4>서초 그랑시아 로얄층 매물!!!</h4>
+                        </div>
+                        <div style="width: 100%; padding-left: 1rem; font-size: 1rem;">
+                            <p>◆ 굿 공인중개사를 만나면 삶이 달라집니다!</p>
+                            <p>◆ 신축! 채광, 환기, 뷰 GOOD~!</p>
+                            <p>◆ 강남 역세권입니다! 지하철 및 버스 노선 다수!</p>
+                        </div>
+                    </div>
+
+                    <hr class="container px-0 gx-lg-5" style="width: 100%; margin-top: 3rem; margin-bottom: 4rem;">
+
+                    <div style="width: 100%; margin-bottom: 3rem;">
+                        <h4 style="text-align: center;">가격정보</h4>
+                    </div>
+                    <div class="price-info">
+                        <p>매매 / 전세 / 월세</p>
+                        <p>관리비</p>
+                        <p>주차비</p>
+                        <p>단기임대</p>
+                    </div>
+                    <hr class="container px-0 gx-lg-5" style="width: 100%; margin-top: 0rem; margin-bottom: 1rem;">
+                    <div class="price-info">
+                        <div>
+                            <p>매매 13억</p>
+                            <p>전세 10억</p>
+                            <p>월세 5억 / 200만원</p>
+                        </div>
+                        <div>
+                            <p>매월 10만원</p>
+                            <p>(청소비, 경비비, 승강기 유지비, 수선유지비, 인터넷, 유선TV, 기타)</p>
+                            <p>별도 금액으로 부과</p>
+                        </div>
+                        <div>
+                            <p>관리비 포함</p>
+                        </div>
+                        <div>
+                            <p>불가능</p>
+                        </div>
+                    </div>
+                    
+                    <hr class="container px-0 gx-lg-5" style="width: 100%; margin-top: 4rem; margin-bottom: 4rem;">
+                    
+                    <div style="width: 100%; margin-bottom: 3rem;">
+                        <h4 style="text-align: center;">옵션</h4>
+                    </div>
+                    <div style="width: 100%; text-align: center;">
+                        <img src="/img/옵션.png" alt="#">
+                    </div>
+
+                    <hr class="container px-0 gx-lg-5" style="width: 100%; margin-top: 4rem; margin-bottom: 4rem;">
+                    
+                    <div style="width: 100%; margin-bottom: 3rem;">
+                        <h4 style="text-align: center;">보안 및 안전시설</h4>
+                    </div>
+                    <div style="width: 100%; text-align: center;">
+                        <img src="/img/보안시설.png" alt="#">
+                    </div>
+
+                </div>
+        </section>
+        </div>
+        <!-- Footer-->
+        <footer class="container px-0 py-5 gx-1 gx-4 gx-lg-5 bg-white">
+            <hr class="container px-0 gx-lg-5" style="width: 100%;">
+            <div class="bottom-anounce">
+                <p class="copy1 m-0 text-center text-dark">(주)룸메이트 / 서울시 서초구 룸메이트로 1028 룸메빌딩 / 대표 : 강하종 / 개인정보관리책임자 : 김희태, 사유진, 신혜지 / 사업자등록번호 : 202-11-02814 / 통신판매업신고 : 2021-서울강남-211028호</p>
+                <p class="copy2 m-0">(주)룸메이트 사이트의 상품/판매회원/중개 서비스/거래 정보, 콘텐츠, UI 등에 대한 무단복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠산업 진흥법 등 관련법령에 의하여 엄격히 금지됩니다. [안내보]</p>
+                <p class="copy2 m-0">(주)룸메이트는 통신판매중개자이며, 통신판매의 당사자가 아닙니다. 상품, 상품정보, 거래에 관한 의무와 책임은 판매회원에게 있습니다. / Copyright &copy; 2021 roommate Inc. All rights reserved from Bernie_Alex</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>

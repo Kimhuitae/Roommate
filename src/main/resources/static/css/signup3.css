@@ -1,0 +1,75 @@
+#logo {
+    width: 190px;
+    text-align: center;
+}
+
+img {
+	display: block;
+	margin: auto;
+}
+
+h1 {
+	font-family: "S-Core Dream 7";
+}
+
+h3 {
+	font-family: "S-Core Dream 5";
+}
+
+.ex {
+	font-family: "S-Core Dream 3";
+}
+
+.box {
+	padding: white;
+	padding-top: 120px;
+	border: 1px solid lightgray;
+	width: 506px;
+	height: 509px;
+	text-align: center;
+	border-radius: 8px;
+	display: block;
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -253px;
+	margin-top: -325px;
+}
+
+.button1 {
+	margin-top: 2rem;
+	text-align: center;
+	width: 176px;
+	height: 40px;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 0.5rem;
+	background: white;
+	margin-bottom: 10px;
+	font-size: 1rem;
+	font-family: "S-Core Dream 3";
+}
+
+.button2 {
+	background: black;
+	text-align: center;
+	width: 176px;
+	height: 40px;
+	display: inline-block;
+	color: #ffffff;
+	border: 1px solid black;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+	font-family: "S-Core Dream 3";
+}
+
+.button1:hover {
+	background: black;
+	color: white;
+}
+
+.button2:hover {
+	background: white;
+	color: black;
+}

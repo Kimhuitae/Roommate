@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/signup2.css">
+<title>룸메이트 - 방을 구하는 가장 쉬운 방법</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<!--	<form method="post" action="/signup.do">-->
+		<div>
+			<a href="/Roommate/main"><img src="/img/0.브랜드로고.png" id="logo"></a>
+			<div class="box">
+				<h1>회원가입</h1>
+				<p class="ex">아이디</p>
+				<input type="text" class="submit" name="userid" id="userid">
+				<p class="ex">비밀번호</p>
+				<input type="password" class="submit" name="userpw" id="userpw">
+				<p class="ex">비밀번호 확인</p>
+				<input type="password" class="submit" name="userpw">
+				<p class="ex">전화번호</p>
+				<input type="text" class="submit" name="userpn" id="userpn">
+				<p class="ex">이메일</p>
+				<input type="text" class="submit" name="useremail" id="useremail">
+				<hr class='bar'>
+				<input type="button" value="취소" class="button1" onclick="location.href='/Roommate/main'">
+<!--				<input type="submit" value="회원가입" class="button2">-->
+				<input type="button" id="btn-save" value="회원가입" class="button2">
+			</div>
+		</div>
+<!--	</form>-->
+<script src="/js/user2.js"></script>
+</body>
+</html>
